@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Meriem Abubeker — Senior QA Automation Engineer</title>
+<title>Meriem Abubeker — Senior Software Test Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -275,17 +275,19 @@
 
   .about-photo {
     position: relative;
-    aspect-ratio: 1 / 1.08;
-    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     overflow: hidden;
     background: linear-gradient(160deg, rgba(255,27,141,0.16), rgba(255,122,26,0.08));
     border: 1px solid var(--border);
+    max-width: 320px;
+    margin: 0 auto;
   }
   .about-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: center 18%;
     display: block;
   }
 
@@ -347,6 +349,12 @@
     margin-bottom: 18px;
   }
   .skill-card .cat::before { content: '// '; color: var(--pink); }
+
+  .principle-desc {
+    color: var(--muted);
+    font-size: 15px;
+  }
+
 
   .tag-list {
     display: flex;
@@ -584,6 +592,28 @@
     color: var(--muted);
   }
   footer .fnav a:hover { color: var(--ink); }
+
+  .fsocial {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .fsocial a {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--muted);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .fsocial a:hover {
+    color: var(--ink);
+    border-color: var(--orange);
+  }
+  .fsocial svg { width: 16px; height: 16px; }
 </style>
 </head>
 <body>
@@ -594,6 +624,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#philosophy">Philosophy</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -606,9 +637,9 @@
   <div class="hero-glow"></div>
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">SENIOR QA AUTOMATION ENGINEER</div>
-      <h1>I find what<br>everyone else <em>misses.</em></h1>
-      <p class="lede">10+ years building test automation frameworks from the ground up — Playwright, TypeScript, and a context-driven approach to catching what matters before your users do.</p>
+      <div class="eyebrow">SENIOR SOFTWARE TEST ENGINEER</div>
+      <h1>I turn uncertainty<br>into <em>knowledge.</em></h1>
+      <p class="lede">10+ years of testing complex software by investigating risk, questioning assumptions, and learning from the product in front of me — with automation used to extend human exploration, not replace it.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View my work</a>
         <a class="btn btn-ghost" href="assets/Meriem-Abubeker-Resume.pdf" download>Download résumé</a>
@@ -617,15 +648,15 @@
       <div class="stat-row">
         <div class="stat">
           <div class="num">10+</div>
-          <div class="label">Years in QA</div>
+          <div class="label">Years in SOftware Testing</div>
         </div>
         <div class="stat">
-          <div class="num">8</div>
-          <div class="label">Automation frameworks built</div>
+          <div class="num">∞</div>
+          <div class="label">Questions worth asking</div>
         </div>
         <div class="stat">
-          <div class="num">5</div>
-          <div class="label">Industries tested</div>
+          <div class="num">1</div>
+          <div class="label">Principle: test the context</div>
         </div>
       </div>
     </div>
@@ -657,9 +688,9 @@
     <div class="section-head">
       <div>
         <div class="eyebrow">ABOUT</div>
-        <h2>Context-driven,<br>not checklist-driven.</h2>
+        <h2>Testing is investigation,<br>not checklist execution.</h2>
       </div>
-      <p>I don't just execute test plans — I read the situation, question assumptions, and go looking for the failure modes a script would never think to check.</p>
+      <p>I treat testing as an empirical investigation. The product, risks, time, people, technology, and business consequences shape what I test, how deeply I test it, and what evidence is worth collecting.</p>
     </div>
 
     <div class="about-grid">
@@ -668,9 +699,9 @@
       </div>
 
       <div class="about-copy">
-        <p><strong>I'm a Senior Software Test Engineer with 10+ years of experience</strong> delivering high-quality enterprise software across eCommerce, FinTech, ERP, SaaS, and AI-driven applications.</p>
-        <p>My focus is building automation foundations from the ground up — not bolting tests onto someone else's framework, but architecting the shared clients, fixtures, and reporting that let a whole team ship with confidence. I pair that with a context-driven, exploratory mindset: automation catches what you already expect, exploration finds what you don't.</p>
-        <p>I actively use AI tools — ChatGPT, GitHub Copilot, and Cursor — to accelerate test case generation, test data creation, and automation code, so more of my time goes to the judgment calls a tool can't make.</p>
+        <p><strong>I'm a Senior Software Test Engineer with 10+ years of experience</strong> investigating enterprise and customer-facing software across eCommerce, FinTech, ERP, SaaS, remittance, lending, messaging, and AI-driven applications.</p>
+        <p>My testing starts with <strong>context and questions</strong>, not a predetermined checklist — the right approach for a payment API is rarely the right approach for a marketing page. I care about risks that can actually hurt users or the business, not about producing the largest number of test cases. How I get there is its own section, below.</p>
+        <p>Automation is part of that strategy. I build maintainable Playwright, Cypress, Selenium, API, and performance tooling to handle repeatable checks, generate useful signals, and free human attention for exploration. AI tools can accelerate the mechanics; <strong>testing judgment remains mine.</strong></p>
 
         <div class="about-facts">
           <div>
@@ -683,11 +714,11 @@
           </div>
           <div>
             <div class="fact-label">APPROACH</div>
-            <div class="fact-value">Context-driven &amp; exploratory testing</div>
+            <div class="fact-value">Context-driven, exploratory &amp; risk-based investigation</div>
           </div>
           <div>
             <div class="fact-label">EDUCATION</div>
-            <div class="fact-value">BSc Software Engineering, 2014</div>
+            <div class="fact-value">BSc Software Engineering</div>
           </div>
         </div>
       </div>
@@ -700,24 +731,24 @@
     <div class="section-head">
       <div>
         <div class="eyebrow">SKILLS</div>
-        <h2>The toolkit behind<br>the testing.</h2>
+        <h2>Tools serve the<br>investigation.</h2>
       </div>
-      <p>A decade of QA work compressed into the tools, languages, and practices I reach for daily.</p>
+      <p>My tools change with the problem. The durable skills are modeling, questioning, exploration, risk analysis, observation, evidence, and clear communication.</p>
     </div>
 
     <div class="skills-grid">
       <div class="skill-card">
-        <div class="cat">TESTING</div>
+        <div class="cat">TESTING &amp; THINKING</div>
         <div class="tag-list">
-          <span class="tag">Functional</span>
-          <span class="tag">Integration</span>
-          <span class="tag">Regression</span>
-          <span class="tag">Exploratory</span>
+          <span class="tag">Context-Driven Testing</span>
+          <span class="tag">Exploratory Testing</span>
+          <span class="tag">Risk-Based Testing</span>
+          <span class="tag">Test Design</span>
           <span class="tag">API</span>
+          <span class="tag">Integration</span>
           <span class="tag">Database</span>
           <span class="tag">Performance</span>
           <span class="tag">Security</span>
-          <span class="tag">Mobile</span>
         </div>
       </div>
 
@@ -748,6 +779,7 @@
       <div class="skill-card">
         <div class="cat">TOOLING</div>
         <div class="tag-list">
+          <span class="tag">Postman</span>
           <span class="tag">Jira / Xray</span>
           <span class="tag">TestRail</span>
           <span class="tag">Docker</span>
@@ -761,6 +793,7 @@
         <div class="cat">AI-ASSISTED TESTING</div>
         <div class="tag-list">
           <span class="tag">ChatGPT</span>
+          <span class="tag">Cloude</span>
           <span class="tag">GitHub Copilot</span>
           <span class="tag">Cursor</span>
         </div>
@@ -780,14 +813,53 @@
   </div>
 </section>
 
+<section class="block" id="philosophy">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">TESTING PHILOSOPHY</div>
+        <h2>Questions first.<br>Evidence second.</h2>
+      </div>
+      <p>I don't measure testing by the number of scripts executed. I ask whether the investigation is revealing information that matters to the people who must make the release decision.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="cat">START WITH CONTEXT</div>
+        <p class="principle-desc">Understand the product, users, architecture, business stakes, constraints, and current changes before deciding what deserves attention.</p>
+      </div>
+      <div class="skill-card">
+        <div class="cat">EXPLORE WITH PURPOSE</div>
+        <p class="principle-desc">Generate and pursue questions. Vary data, timing, state, roles, dependencies, and boundaries. Follow surprises instead of forcing reality back into the plan.</p>
+      </div>
+      <div class="skill-card">
+        <div class="cat">SEEK INFORMATION</div>
+        <p class="principle-desc">Use logs, APIs, databases, network traces, source code, product behavior, and conversations as testing evidence.</p>
+      </div>
+      <div class="skill-card">
+        <div class="cat">AUTOMATE THE RIGHT THINGS</div>
+        <p class="principle-desc">Automate checks that benefit from repeatability and speed. Keep human attention available for ambiguity, discovery, modeling, and judgment.</p>
+      </div>
+      <div class="skill-card">
+        <div class="cat">REPORT RISK, NOT NOISE</div>
+        <p class="principle-desc">Explain what happened, why it matters, what is affected, how confident I am, and what I recommend — so stakeholders can make informed decisions.</p>
+      </div>
+      <div class="skill-card">
+        <div class="cat">LEARN CONTINUOUSLY</div>
+        <p class="principle-desc">Every observation changes the model. Good testing is an ongoing process of learning about the product and refining the investigation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="projects">
   <div class="wrap">
     <div class="section-head">
       <div>
         <div class="eyebrow">PROJECTS</div>
-        <h2>Six platforms,<br>six failure modes.</h2>
+        <h2>Many systems,<br>questions beneath the surface.</h2>
       </div>
-      <p>A cross-section of the systems I've helped ship — messaging, remittance, eCommerce, SaaS, lending, and enterprise ERP.</p>
+      <p>A cross-section of the systems I've investigated — looking beyond happy paths to failure modes, system behavior, integration boundaries, authorization, data integrity, and the risks that emerge from real-world use.</p>
     </div>
 
     <div class="projects-grid">
@@ -797,9 +869,8 @@
         <h3>Emalify</h3>
         <p class="desc">Customer engagement platform with WhatsApp Business API integration — template messaging, 24-hour conversation windows, and agent-assisted support.</p>
         <ul class="project-points">
-          <li>Built a Playwright/TypeScript automation framework with a shared HTTP client layer and per-resource clients.</li>
-          <li>Validated WhatsApp template creation, delivery, and 24-hour chat resumption logic.</li>
-          <li>Tested conversation assignment workflows routing chats to support agents.</li>
+          <li>Explored WhatsApp template, callback, routing, billing, and conversation-window behavior across integration boundaries.</li>
+          <li>Followed unexpected behavior through API responses, state changes, and backend evidence instead of stopping at UI symptoms.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">Playwright</span>
@@ -814,15 +885,16 @@
         <h3>TumaTuma</h3>
         <p class="desc">Cross-border remittance platform moving money from abroad into Kenya, with identity verification and real-time transaction updates.</p>
         <ul class="project-points">
-          <li>Built the automation suite from the ground up, covering functional, integration, regression, and E2E testing.</li>
-          <li>Validated transfers, exchange rates, fees, and payout status; tested KYC/ID and payment integrations.</li>
-          <li>Risk-based exploratory testing with root-cause analysis on payment edge cases.</li>
+          <li>Investigated transfers, exchange rates, fees, KYC/ID, payout status, authentication, and third-party integration boundaries.</li>
+          <li>Followed failure chains across APIs, databases, WebSockets, queues, and external services to distinguish symptoms from causes.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">Go</span>
           <span class="tag">PostgreSQL</span>
           <span class="tag">WebSockets</span>
           <span class="tag">Docker</span>
+          <span class="tag">Veriff</span>
+          <span class="tag"></span>
         </div>
       </div>
 
@@ -831,9 +903,9 @@
         <h3>Adenzo</h3>
         <p class="desc">End-to-end QA across a React storefront and backend middleware, from product catalog to checkout.</p>
         <ul class="project-points">
-          <li>Validated cart, checkout, and order management workflows end-to-end.</li>
-          <li>Cross-device and cross-browser storefront validation for a consistent purchase journey.</li>
-          <li>REST API testing between storefront and middleware for inventory and pricing.</li>
+          <li>Explored the purchase journey as a system of interacting states rather than a sequence of happy-path screens.</li>
+          <li>Probed checkout, inventory, pricing, order state, browser/device differences, and boundary conditions.</li>
+          <li>Used API and middleware evidence to investigate inconsistencies that were not visible from the storefront alone.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">React</span>
@@ -846,9 +918,9 @@
         <h3>Gebeya SaaS Marketplace</h3>
         <p class="desc">Multi-tenant SaaS marketplace enabling rapid tenant onboarding, customization, and secure access management.</p>
         <ul class="project-points">
-          <li>Automated smoke and regression suites in Cypress; validated REST APIs and data integrity.</li>
-          <li>Tested multi-tenant provisioning and role-based access control (RBAC).</li>
-          <li>Built a data-driven test framework in Python to speed up test creation.</li>
+          <li>Automated the repeatable multi-tenant regression checks, then spent the freed-up time probing RBAC and tenant isolation by hand — where the real risk lives.</li>
+          <li>Investigated RBAC and multi-tenant risks by varying roles, resources, tenants, and access paths.</li>
+          <li>Built data-driven tooling to widen coverage fast, without turning the job into producing test cases for their own sake.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">.NET Core</span>
@@ -863,8 +935,8 @@
         <h3>Senti</h3>
         <p class="desc">Mobile-based micro-credit platform issuing instant loans, with an admin portal for onboarding and compliance.</p>
         <ul class="project-points">
-          <li>Validated onboarding through loan approval, disbursement, repayment, and reconciliation.</li>
-          <li>Tested CRB and compliance workflows, plus RBAC across administrative modules.</li>
+          <li>Investigated the lending lifecycle from onboarding through approval, disbursement, repayment, and reconciliation, looking for broken state transitions.</li>
+          <li>Explored CRB, compliance, RBAC, administrative workflows, and data consistency where small defects can create financial consequences.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">Go</span>
@@ -879,14 +951,15 @@
         <h3>ERP — Ethiopian Electric Power</h3>
         <p class="desc">Large-scale, multi-module ERP system covering HR, Finance, and Asset Management for a national utility.</p>
         <ul class="project-points">
-          <li>Oracle database validation and automated regression with Selenium WebDriver.</li>
-          <li>Built a CI/CD pipeline from scratch — Jenkins, GitLab, JFrog Artifactory, and SonarQube quality gates.</li>
+          <li>Used Oracle data and system behavior as evidence, not just pass/fail — regression risk in a system this large rarely announces itself cleanly.</li>
+          <li>Built CI/CD quality infrastructure to handle the repeatable feedback loop, so ambiguous failures still got a human look.</li>
         </ul>
         <div class="project-stack">
           <span class="tag">Oracle</span>
           <span class="tag">Java/Spring</span>
           <span class="tag">Selenium</span>
           <span class="tag">Jenkins</span>
+          <span class="tag">SonarQube</span>
         </div>
       </div>
 
@@ -899,15 +972,15 @@
     <div class="section-head">
       <div>
         <div class="eyebrow">EXPERIENCE</div>
-        <h2>Five companies,<br>one thread.</h2>
+        <h2>Many products,<br>one testing mindset.</h2>
       </div>
-      <p>The full role-by-role history — responsibilities, tech stacks, and outcomes — lives in my résumé.</p>
+      <p>The environments changed — ERP, FinTech, SaaS, messaging, lending, remittance. The thread stayed the same: understand the context, identify meaningful risks, investigate with purpose, and communicate what the evidence actually tells us.</p>
     </div>
 
     <div class="resume-panel">
       <div>
-        <h3>Want the full picture?</h3>
-        <p>10+ years across FinTech, ERP, SaaS, and eCommerce, with every role, project, and tool laid out in detail.</p>
+        <h3>Testing beyond the script.</h3>
+        <p>10+ years across FinTech, ERP, SaaS, eCommerce, messaging, lending, and remittance — combining exploratory investigation with automation, API analysis, data inspection, and risk-focused reporting.</p>
 
         <div class="timeline-strip">
           <div class="timeline-row">
@@ -944,8 +1017,8 @@
 <section class="block contact-block" id="contact">
   <div class="wrap">
     <div class="eyebrow">CONTACT</div>
-    <h2>Let's find what <em>everyone else missed.</em></h2>
-    <p>Open to Senior QA / Automation roles — remote or Addis Ababa-based. The fastest way to reach me is email or LinkedIn.</p>
+    <h2>Let's investigate what <em>the checklist can't see.</em></h2>
+    <p>Open to Senior QA / Automation roles where thoughtful testing matters — remote or Addis Ababa-based. I bring context-driven exploration, strong technical investigation, and automation that supports good testing rather than pretending to replace it.</p>
 
     <div class="contact-links">
       <a class="contact-link" href="mailto:bintabibekr@gmail.com">
@@ -982,8 +1055,20 @@
     <div class="fnav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#philosophy">Philosophy</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+    </div>
+    <div class="fsocial">
+      <a href="mailto:bintabibekr@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/meriem-abubeker/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7.5" y1="10" x2="7.5" y2="17"/><circle cx="7.5" cy="7" r="0.8" fill="currentColor" stroke="none"/><path d="M11.5 17v-4.2c0-1.6 1-2.6 2.4-2.6 1.3 0 2.1 1 2.1 2.6V17"/></svg>
+      </a>
+      <a href="https://github.com/attuye" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      </a>
     </div>
   </div>
 </footer>
